@@ -1,149 +1,123 @@
 import Image from "next/image";
-import PageIllustration from "@/components/page-illustration";
-import Avatar01 from "@/public/images/avatar-01.jpg";
-import Avatar02 from "@/public/images/avatar-02.jpg";
-import Avatar03 from "@/public/images/avatar-03.jpg";
-import Avatar04 from "@/public/images/avatar-04.jpg";
-import Avatar05 from "@/public/images/avatar-05.jpg";
-import Avatar06 from "@/public/images/avatar-06.jpg";
 
 export default function HeroHome() {
   return (
-    <section className="relative">
-      <PageIllustration />
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        {/* Hero content */}
-        <div className="pb-12 pt-32 md:pb-20 md:pt-40">
-          {/* Section header */}
-          <div className="pb-12 text-center md:pb-16">
-            <div
-              className="mb-6 border-y [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]"
-              data-aos="zoom-y-out"
+    <section className="relative overflow-hidden bg-[#060b11] text-white">
+      {/* Background glow */}
+      <div className="absolute inset-0">
+        <div className="absolute left-1/2 top-0 h-[260px] w-[260px] -translate-x-1/2 rounded-full bg-teal-500/15 blur-3xl sm:h-[420px] sm:w-[420px]" />
+        <div className="absolute -left-16 top-28 h-40 w-40 rounded-full bg-cyan-400/10 blur-3xl sm:-left-24 sm:top-40 sm:h-72 sm:w-72" />
+        <div className="absolute -right-16 bottom-10 h-40 w-40 rounded-full bg-teal-400/10 blur-3xl sm:-right-24 sm:bottom-0 sm:h-72 sm:w-72" />
+      </div>
+
+      {/* Floating gaming icons */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <span className="absolute left-[8%] top-24 text-xl text-teal-300/30 animate-pulse sm:text-3xl">
+          ✕
+        </span>
+        <span className="absolute right-[10%] top-28 text-xl text-white/20 animate-bounce sm:text-3xl">
+          ○
+        </span>
+        <span className="absolute left-[12%] bottom-44 text-xl text-cyan-300/20 animate-pulse sm:text-3xl">
+          △
+        </span>
+        <span className="absolute right-[14%] bottom-32 text-lg text-white/20 animate-bounce sm:text-3xl">
+          □
+        </span>
+        <span className="absolute right-[38%] top-20 text-sm text-teal-200/20 animate-pulse sm:text-xl">
+          ✕
+        </span>
+        <span className="absolute left-[42%] bottom-24 text-sm text-cyan-200/20 animate-bounce sm:text-xl">
+          ○
+        </span>
+      </div>
+
+      <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 pb-14 pt-24 sm:px-6 sm:pb-20 sm:pt-28 lg:grid-cols-2 lg:gap-14 lg:px-8 lg:pt-36">
+        {/* Content */}
+        <div className="order-1 text-center lg:text-left">
+          <div className="mb-4 inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs text-teal-300 backdrop-blur sm:mb-5 sm:px-4 sm:text-sm">
+            Professional PlayStation Controller Repair
+          </div>
+
+          <h1 className="mb-5 text-4xl font-bold leading-tight sm:text-6xl lg:text-7xl">
+            Joystick
+            <span className="block text-teal-400">Repair</span>
+          </h1>
+
+          <p className="mx-auto mb-7 max-w-xl text-sm leading-7 text-slate-300 sm:text-lg sm:leading-8 lg:mx-0">
+            Premium repair service for PlayStation controllers, including drift
+            repair, analog replacement, Hall Effect upgrades, battery
+            replacement, and full internal cleaning.
+          </p>
+
+          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
+            <a
+              href="https://wa.me/201000000000"
+              className="inline-flex min-h-[48px] items-center justify-center rounded-xl bg-teal-500 px-6 py-3 text-sm font-semibold text-black transition hover:bg-teal-400"
             >
-              <div className="-mx-0.5 flex justify-center -space-x-3">
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar01}
-                  width={32}
-                  height={32}
-                  alt="Avatar 01"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar02}
-                  width={32}
-                  height={32}
-                  alt="Avatar 01"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar03}
-                  width={32}
-                  height={32}
-                  alt="Avatar 02"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar04}
-                  width={32}
-                  height={32}
-                  alt="Avatar 03"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar05}
-                  width={32}
-                  height={32}
-                  alt="Avatar 04"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar06}
-                  width={32}
-                  height={32}
-                  alt="Avatar 05"
-                />
-              </div>
+              Book on WhatsApp
+            </a>
+
+            <a
+              href="#services"
+              className="inline-flex min-h-[48px] items-center justify-center rounded-xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+            >
+              Explore Services
+            </a>
+          </div>
+
+          <div className="mt-8 grid grid-cols-3 gap-3 text-center sm:mt-10 sm:gap-4 lg:max-w-xl">
+            <div className="rounded-2xl border border-white/10 bg-white/5 px-3 py-4 backdrop-blur">
+              <span className="block text-xl font-bold text-white sm:text-2xl">
+                500+
+              </span>
+              <span className="text-[11px] text-slate-400 sm:text-sm">
+                Controllers Repaired
+              </span>
             </div>
-            <h1
-              className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] md:text-6xl"
-              data-aos="zoom-y-out"
-              data-aos-delay={150}
-            >
-              The website builder you're <br className="max-lg:hidden" />
-              looking for
-            </h1>
-            <div className="mx-auto max-w-3xl">
-              <p
-                className="mb-8 text-lg text-gray-700"
-                data-aos="zoom-y-out"
-                data-aos-delay={300}
-              >
-                Simple is a modern website builder powered by AI that changes
-                how companies create user interfaces together.
-              </p>
-              <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
-                <div
-                  className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center"
-                  data-aos="zoom-y-out"
-                  data-aos-delay={450}
-                >
-                  <a
-                    className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="#0"
-                  >
-                    <span className="relative inline-flex items-center">
-                      Start Free Trial{" "}
-                      <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                        -&gt;
-                      </span>
-                    </span>
-                  </a>
-                  <a
-                    className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="#0"
-                  >
-                    Learn More
-                  </a>
-                </div>
-              </div>
+
+            <div className="rounded-2xl border border-white/10 bg-white/5 px-3 py-4 backdrop-blur">
+              <span className="block text-xl font-bold text-white sm:text-2xl">
+                Fast
+              </span>
+              <span className="text-[11px] text-slate-400 sm:text-sm">
+                Service Turnaround
+              </span>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-white/5 px-3 py-4 backdrop-blur">
+              <span className="block text-xl font-bold text-white sm:text-2xl">
+                PS5
+              </span>
+              <span className="text-[11px] text-slate-400 sm:text-sm">
+                Repair Specialists
+              </span>
             </div>
           </div>
-          {/* Hero image */}
-          <div
-            className="mx-auto max-w-3xl"
-            data-aos="zoom-y-out"
-            data-aos-delay={600}
-          >
-            <div className="relative aspect-video rounded-2xl bg-gray-900 px-5 py-3 shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,--theme(--color-slate-300/.8),transparent)1]">
-              <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:bg-[length:16px_9px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,var(--color-gray-600)_4.5px,transparent_0)] after:w-[41px]">
-                <span className="text-[13px] font-medium text-white">
-                  cruip.com
-                </span>
+        </div>
+
+        {/* Image */}
+        <div className="order-2">
+          <div className="relative mx-auto max-w-md lg:max-w-none">
+            <div className="absolute -inset-3 rounded-[28px] bg-teal-500/10 blur-2xl sm:-inset-4" />
+            <div className="relative overflow-hidden rounded-[24px] border border-white/10 bg-white/5 p-2 shadow-2xl backdrop-blur sm:rounded-[28px] sm:p-3">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-[18px] sm:rounded-[22px]">
+                <Image
+                  src="/images/controller-repair.jpg"
+                  alt="Joystick Repair"
+                  fill
+                  priority
+                  className="object-cover transition duration-700 hover:scale-105"
+                />
               </div>
-              <div className="font-mono text-gray-500 [&_span]:opacity-0">
-                <span className="animate-[code-1_10s_infinite] text-gray-200">
-                  npm login
-                </span>{" "}
-                <span className="animate-[code-2_10s_infinite]">
-                  --registry=https://npm.pkg.github.com
-                </span>
-                <br />
-                <span className="animate-[code-3_10s_infinite]">
-                  --scope=@phanatic
-                </span>{" "}
-                <span className="animate-[code-4_10s_infinite]">
-                  Successfully logged-in.
-                </span>
-                <br />
-                <br />
-                <span className="animate-[code-5_10s_infinite] text-gray-200">
-                  npm publish
-                </span>
-                <br />
-                <span className="animate-[code-6_10s_infinite]">
-                  Package published.
-                </span>
+
+              {/* Floating badges */}
+              <div className="absolute left-3 top-3 rounded-full border border-white/10 bg-black/50 px-3 py-1 text-[10px] text-teal-300 backdrop-blur sm:left-5 sm:top-5 sm:text-xs">
+                Drift Fix
+              </div>
+
+              <div className="absolute bottom-3 right-3 rounded-full border border-white/10 bg-black/50 px-3 py-1 text-[10px] text-white backdrop-blur sm:bottom-5 sm:right-5 sm:text-xs">
+                Hall Effect Upgrade
               </div>
             </div>
           </div>

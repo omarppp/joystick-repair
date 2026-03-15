@@ -1,22 +1,28 @@
 export const metadata = {
-  title: "Home - Simple",
-  description: "Page description",
+  title: "Joystick Repair",
+  description: "Professional PlayStation Controller Repair",
 };
 
-import Hero from "@/components/hero-home";
-import BusinessCategories from "@/components/business-categories";
+import Navbar from "@/components/navbar";
+import HeroHome from "@/components/hero-home";
 import FeaturesPlanet from "@/components/features-planet";
-import LargeTestimonial from "@/components/large-testimonial";
-import Cta from "@/components/cta";
+import Gallery from "@/components/gallery";
+import BeforeAfter from "@/components/before-after";
+import Reviews from "@/components/reviews";
+import Founder from "@/components/founder";
+import WhatsAppButton from "@/components/whatsapp-button";
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <BusinessCategories />
+      <Navbar />
+      <HeroHome />
       <FeaturesPlanet />
-      <LargeTestimonial />
-      <Cta />
+      <Gallery />
+      <Reviews />
+      <BeforeAfter />
+      <Founder />
+      <WhatsAppButton />
     </>
   );
 }
