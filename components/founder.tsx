@@ -41,31 +41,34 @@ export default function Founder() {
               performance and design.
             </p>
 
-            <div className="mt-8 grid grid-cols-3 gap-3 sm:gap-4">
-              <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4 backdrop-blur">
+            <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
+              <div className="rounded-2xl border border-cyan-400/20 bg-white/5 px-4 py-5 text-center backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(6,182,196,0.30)]">
+                <span className="mb-2 block text-4xl text-cyan-300">⚙️</span>
                 <span className="block text-xl font-bold text-white sm:text-2xl">
-                  Pro
+                  Pro Repair
                 </span>
-                <span className="text-[11px] text-slate-400 sm:text-sm">
-                  Repair Quality
+                <span className="text-xs text-slate-300 sm:text-sm">
+                  Quality diagnostics, expert soldering and tested outcomes.
                 </span>
               </div>
 
-              <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4 backdrop-blur">
+              <div className="rounded-2xl border border-cyan-400/20 bg-white/5 px-4 py-5 text-center backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(6,182,196,0.30)]">
+                <span className="mb-2 block text-4xl text-cyan-300">🎛️</span>
                 <span className="block text-xl font-bold text-white sm:text-2xl">
-                  Custom
+                  Custom Mods
                 </span>
-                <span className="text-[11px] text-slate-400 sm:text-sm">
-                  Builds & Mods
+                <span className="text-xs text-slate-300 sm:text-sm">
+                  Tailored builds, aesthetics and performance tuning.
                 </span>
               </div>
 
-              <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4 backdrop-blur">
+              <div className="rounded-2xl border border-cyan-400/20 bg-white/5 px-4 py-5 text-center backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(6,182,196,0.30)]">
+                <span className="mb-2 block text-4xl text-cyan-300">🔧</span>
                 <span className="block text-xl font-bold text-white sm:text-2xl">
-                  Precise
+                  Precision
                 </span>
-                <span className="text-[11px] text-slate-400 sm:text-sm">
-                  Electronics Work
+                <span className="text-xs text-slate-300 sm:text-sm">
+                  Electronics work with micron-level accuracy and stable circuits.
                 </span>
               </div>
             </div>

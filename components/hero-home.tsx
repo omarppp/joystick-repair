@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function HeroHome() {
   return (
-    <section className="relative overflow-hidden bg-[#060b11] text-white">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#060b11] via-[#05090f] to-[#02050a] text-white">
       {/* Background glow */}
       <div className="absolute inset-0">
-        <div className="absolute left-1/2 top-0 h-[260px] w-[260px] -translate-x-1/2 rounded-full bg-teal-500/15 blur-3xl sm:h-[420px] sm:w-[420px]" />
-        <div className="absolute -left-16 top-28 h-40 w-40 rounded-full bg-cyan-400/10 blur-3xl sm:-left-24 sm:top-40 sm:h-72 sm:w-72" />
-        <div className="absolute -right-16 bottom-10 h-40 w-40 rounded-full bg-teal-400/10 blur-3xl sm:-right-24 sm:bottom-0 sm:h-72 sm:w-72" />
+        <div className="absolute left-1/2 top-0 h-[260px] w-[260px] -translate-x-1/2 rounded-full bg-cyan-400/20 blur-3xl sm:h-[420px] sm:w-[420px]" />
+        <div className="absolute -left-16 top-28 h-44 w-44 rounded-full bg-teal-500/20 blur-3xl sm:-left-24 sm:top-40 sm:h-80 sm:w-80" />
+        <div className="absolute -right-16 bottom-10 h-44 w-44 rounded-full bg-cyan-300/15 blur-3xl sm:-right-24 sm:bottom-0 sm:h-80 sm:w-80" />
       </div>
 
       {/* Floating gaming icons */}
@@ -35,62 +35,63 @@ export default function HeroHome() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 pb-14 pt-24 sm:px-6 sm:pb-20 sm:pt-28 lg:grid-cols-2 lg:gap-14 lg:px-8 lg:pt-36">
         {/* Content */}
         <div className="order-1 text-center lg:text-left">
-          <div className="mb-4 inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs text-teal-300 backdrop-blur sm:mb-5 sm:px-4 sm:text-sm">
-            Professional PlayStation Controller Repair
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-teal-300/20 bg-cyan-500/10 px-3 py-2 text-xs text-cyan-200 backdrop-blur sm:mb-5 sm:px-4 sm:text-sm">
+            <span className="inline-flex h-2 w-2 rounded-full bg-cyan-300 animate-pulse" />
+            Precision controller lab
           </div>
 
-          <h1 className="mb-5 text-4xl font-bold leading-tight sm:text-6xl lg:text-7xl">
-            Joystick
-            <span className="block text-teal-400">Repair</span>
+          <h1 className="mb-6 text-4xl font-black leading-tight tracking-tight sm:text-6xl lg:text-7xl">
+            Joystick Repair
+            <span className="block text-transparent bg-gradient-to-r from-cyan-300 via-teal-300 to-blue-300 bg-clip-text">
+              Premium Mod & Service Studio
+            </span>
           </h1>
 
-          <p className="mx-auto mb-7 max-w-xl text-sm leading-7 text-slate-300 sm:text-lg sm:leading-8 lg:mx-0">
-            Premium repair service for PlayStation controllers, including drift
-            repair, analog replacement, Hall Effect upgrades, battery
-            replacement, and full internal cleaning.
+          <p className="mx-auto mb-8 max-w-xl text-sm leading-7 text-slate-300 sm:text-lg sm:leading-8 lg:mx-0">
+            Expert joystick and controller maintenance with professional drift fixes, custom mods, Hall Effect upgrades, and robust electronics precision work.
           </p>
 
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
             <a
               href="https://wa.me/201000000000"
-              className="inline-flex min-h-[48px] items-center justify-center rounded-xl bg-teal-500 px-6 py-3 text-sm font-semibold text-black transition hover:bg-teal-400"
+              className="inline-flex min-h-[48px] items-center justify-center rounded-xl bg-gradient-to-r from-cyan-400 to-teal-400 px-6 py-3 text-sm font-semibold text-[#020a0f] shadow-lg shadow-cyan-500/30 transition duration-300 hover:from-teal-400 hover:to-cyan-400"
             >
-              Book on WhatsApp
+              Book WhatsApp
             </a>
 
             <a
               href="#services"
-              className="inline-flex min-h-[48px] items-center justify-center rounded-xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+              className="inline-flex min-h-[48px] items-center justify-center rounded-xl border border-teal-300/20 bg-slate-900/40 px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-slate-800"
             >
-              Explore Services
+              View Services
             </a>
           </div>
 
           <div className="mt-8 grid grid-cols-3 gap-3 text-center sm:mt-10 sm:gap-4 lg:max-w-xl">
-            <div className="rounded-2xl border border-white/10 bg-white/5 px-3 py-4 backdrop-blur">
-              <span className="block text-xl font-bold text-white sm:text-2xl">
+            <div className="rounded-2xl border border-cyan-400/20 bg-white/5 px-3 py-4 backdrop-blur transition hover:shadow-[0_20px_40px_rgba(16,203,235,0.26)]">
+              <span className="block text-2xl font-bold text-white sm:text-3xl">
                 500+
               </span>
-              <span className="text-[11px] text-slate-400 sm:text-sm">
+              <span className="text-[11px] text-slate-300 sm:text-sm">
                 Controllers Repaired
               </span>
             </div>
 
-            <div className="rounded-2xl border border-white/10 bg-white/5 px-3 py-4 backdrop-blur">
-              <span className="block text-xl font-bold text-white sm:text-2xl">
-                Fast
+            <div className="rounded-2xl border border-cyan-400/20 bg-white/5 px-3 py-4 backdrop-blur transition hover:shadow-[0_20px_40px_rgba(16,203,235,0.26)]">
+              <span className="block text-2xl font-bold text-white sm:text-3xl">
+                48h
               </span>
-              <span className="text-[11px] text-slate-400 sm:text-sm">
-                Service Turnaround
+              <span className="text-[11px] text-slate-300 sm:text-sm">
+                Average Turnaround
               </span>
             </div>
 
-            <div className="rounded-2xl border border-white/10 bg-white/5 px-3 py-4 backdrop-blur">
-              <span className="block text-xl font-bold text-white sm:text-2xl">
-                PS5
+            <div className="rounded-2xl border border-cyan-400/20 bg-white/5 px-3 py-4 backdrop-blur transition hover:shadow-[0_20px_40px_rgba(16,203,235,0.26)]">
+              <span className="block text-2xl font-bold text-white sm:text-3xl">
+                %99
               </span>
-              <span className="text-[11px] text-slate-400 sm:text-sm">
-                Repair Specialists
+              <span className="text-[11px] text-slate-300 sm:text-sm">
+                Customer Satisfaction
               </span>
             </div>
           </div>
